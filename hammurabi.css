@@ -6,6 +6,10 @@ head{
 	text-align: center;
 	widht: 20%;
 }
+.font2{
+	text-align: center;
+	margin-left: 25%;
+}
 body{
 	background-color: #fbf6f7;
 	font-family: 'Helvetica', sans-serif;
@@ -48,12 +52,17 @@ button {
 }
 
 #div1{
+	float: left;
 	padding-left: 2vw;
 	width: 40vw;
 }
 
 #div2{
-	
+	float: right;
+	margin-left: auto;
+	border: black 1px solid;
+	width: 300px;
+	text-align: center;
 	
 }
 
@@ -78,6 +87,5 @@ form{
 	margin: 0;
 	border: none;
 	border-right: solid 1px black;
-	z-index: 10;
-	
+	z-index: 10;	
 }

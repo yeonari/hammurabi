@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Hammurabi</title>
+		<link rel="stylesheet" type="text/css" href="hammurabi.css">
+		<script type="text/javascript" src="hammurabi.js">
+		</script>
+	</head>
+
+	<body onload="gameStart();">
+		<h1>O Great Hammurabi!</h1>
+		<h2 id="year">TEXT-SOM-BYTS-UT-AV-JS-FILEN</h2>
+		<ul id="people">
+			<li id="starved">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+			<li id="newcomers">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+			<li id="population">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+		</ul>
+		<ul id="economy">
+			<li id="acres">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+			<li id="bushels">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+			<li id="harvest">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+			<li id="rats">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+			<li id="price">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+		</ul>
+		<form>
+		<fieldset class="fieldset">
+		<legend>Tunnland som ska säljas/köpas: <span id="outputAcrestosellbuy"></span></legend>
+		<input type="button" value="-" id="minusbuttonAcrestosellbuy" onclick="onChangeAcres('minusbuttonAcrestosellbuy');">
+		<input type="range" id="sliderAcrestosellbuy" onchange="onChangeAcres('sliderAcrestosellbuy');">
+		<input type="button" value="+" id="plusbuttonAcrestosellbuy" onclick="onChangeAcres('plusbuttonAcrestosellbuy');">
+		</fieldset>
+		<fieldset class="fieldset">
+		<legend>Feed people: <span id="outputFeedpeople"></span></legend>
+		<input type="button" value="-" id="minusbuttonFeedpeople" onclick="onChangeFeeding('minusbuttonFeedpeople');">
+		<input type="range" id="sliderFeedpeople" onchange="onChangeFeeding('sliderFeedpeople');">
+		<input type="button" value="+" id="plusbuttonFeedpeople" onclick="onChangeFeeding('plusbuttonFeedpeople');">
+		</fieldset>
+		<fieldset class="fieldset">
+		<legend>Plantera med utsäde: <span id="outputPlantwithseed"></span></legend>
+		<input type="button" value="-" id="minusbuttonPlantwithseed" onclick="onChangePlanting('minusbuttonPlantwithseed');">
+		<input type="range" id="sliderPlantwithseed" onchange="onChangePlanting('sliderPlantwithseed');">
+		<input type="button" value="+" id="plusbuttonPlantwithseed" onclick="onChangePlanting('plusbuttonPlantwithseed');">
+		</fieldset>
+		<button type="button" onclick="gameStart();">Restart</button>
+		<button type="button" onclick="finishTurn();">Det är min order!</button>
+		<button type="button">Help</button>
+		</form>
+	</body>
+
+</html>

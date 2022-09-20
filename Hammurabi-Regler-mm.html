@@ -75,7 +75,7 @@ function presubmit() {
 function validatebuy()  {
 	getValues();
 	if ( buy<0 && (buy*-1 >acres))  {
-		alert("Hammurabi: Thank again. You have only 1000 acres of land.");
+		alert("Hammurabi: Think again. You have only 1000 acres of land.");
 		document.f.feed.focus();
 		document.f.buy.focus();
 		return false;

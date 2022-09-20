@@ -1,19 +1,24 @@
 head{
 	
 }
-.font1{
+h1{
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	widht: 20%;
+	color: #003153;
+}
+p{
+	color: #003153;
 }
 .font2{
 	text-align: center;
-	margin-left: 25%;
+	font-family: 'Roboto', sans-serif;
 }
 body{
 	background-color: #fbf6f7;
 	font-family: 'Helvetica', sans-serif;
-
+	margin: 0;
+	padding: 0;
 }
 
 #people {
@@ -22,48 +27,57 @@ body{
 	border: black 1px solid;
 	list-style: none;
 	text-align: center;
+	color: #003153;
 }
 
 #people li {
 	display: inline;
 	margin-right: 10px;
-	border: black 1px solid;
+	color: #003153;
 	}
-
 #economy {
-	display: block;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align:center;
 	padding-left: 0;
-	border: black 1px solid;
+	border: #003153 3pt solid;
+	border-radius: 5pt;
+	box-shadow: 10pt 8pt #003153;
 	list-style: none;
+	color: #003153;
+	width: 30%;
+	margin-left: 35%;
 }
 
 #economy li {
 	margin-bottom: 1px;
-
+	color: #003153;
 }
 
 .fieldset {
 	border-style: none;
+	color: #003153;
 }
 
 button {
 	margin: 30px 25px 0 0;
 	padding: 10px 15px;
+	color: #003153;
 }
 
-#div1{
+#spelDiv{
 	float: left;
-	padding-left: 2vw;
-	width: 40vw;
+	/*padding-left: 2vw;*/
+	width: 50%;
+	border-right: solid 1px black; 
+	background-color: pink;
 }
 
-#div2{
-	float: right;
-	margin-left: auto;
-	border: black 1px solid;
-	width: 300px;
-	text-align: center;
-	
+#infoDiv{
+	float: right; 
+	width: 49%;
+	background-color: limegreen;
 }
 
 form{
@@ -78,14 +92,13 @@ form{
 	width: 10%;
 	
 }
-.vline{
-	position: absolute;
-	height: 100%;
-	top: 250px;
-	left: 50%;
-	bottom: 0;
-	margin: 0;
-	border: none;
-	border-right: solid 1px black;
-	z-index: 10;	
+.actionButton{
+	box-shadow: 7pt 5pt #003153;
+	border-radius: 5pt;
+	transition-duration: 0.3s;
+}
+.actionButton:hover{
+	background-color: #003253;
+	color: white;
+	box-shadow: 0 0 0;
 }

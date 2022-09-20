@@ -19,8 +19,8 @@
 	</header>
 	<body onload="gameStart();">
 
-		<div id="div1">
-		<h2 id="year">TEXT-SOM-BYTS-UT-AV-JS-FILEN</h2>
+		<div id="spelDiv">
+		<h1 id="year">TEXT-SOM-BYTS-UT-AV-JS-FILEN</h1>
 		<ul id="people">
 			<li id="starved">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
 			<li id="newcomers">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
@@ -43,7 +43,7 @@
 		<input type="button" value="+" id="plusbuttonAcrestosellbuy" onclick="onChangeAcres('plusbuttonAcrestosellbuy');">
 		</fieldset>
 		<fieldset class="fieldset">
-		<legend>Feed people: <span id="outputFeedpeople"></span></legend>
+		<legend>Mata folket: <span id="outputFeedpeople"></span></legend>
 		<input type="button" value="-" id="minusbuttonFeedpeople" onclick="onChangeFeeding('minusbuttonFeedpeople');">
 		<input type="range" id="sliderFeedpeople" onchange="onChangeFeeding('sliderFeedpeople');">
 		<input type="button" value="+" id="plusbuttonFeedpeople" onclick="onChangeFeeding('plusbuttonFeedpeople');">
@@ -54,15 +54,19 @@
 		<input type="range" id="sliderPlantwithseed" onchange="onChangePlanting('sliderPlantwithseed');">
 		<input type="button" value="+" id="plusbuttonPlantwithseed" onclick="onChangePlanting('plusbuttonPlantwithseed');">
 		</fieldset>
-		<button type="button" onclick="gameStart();">Restart</button>
-		<button type="button" onclick="finishTurn();">Det är min order!</button>
-		<button type="button">Help</button>
+		<button class="actionButton" type="button" onclick="gameStart();">Restart</button>
+		<button class="actionButton" type="button" onclick="finishTurn();">Det är min order!</button>
 		</form>
-		</div id="div2">
-			<h2 class="font2"> Hummarabi, hjälp oss å nådiga konung</h2>
 		</div>
 		
-		<div class="vline"></div>
+		<div id="infoDiv">
+			<h1 class="font2"> Hummarabi, hjälp oss å nådiga konung</h1>
+			<p>Sätt dig vid makten som den store och barmhärtige konungen Hummarabi,<br>
+			
+			
+			</p>
+		</div>
+		
 	</body>
 
 </html>

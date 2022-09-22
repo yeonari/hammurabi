@@ -1,18 +1,24 @@
+head{
+	
+}
 h1{
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	color: #003153;
 }
-
-p{
+h2{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
 	color: #003153;
 }
-
+p{
+	color: #003153;
+	padding-left: 10pt;
+}
 .font2{
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 }
-
 body{
 	background-color: #fbf6f7;
 	font-family: 'Helvetica', sans-serif;
@@ -24,8 +30,6 @@ body{
 	display: block;
 	padding-left: 0;
 	border: black 1px solid;
-	border-right: none;
-	border-left: none;
 	list-style: none;
 	text-align: center;
 	color: #003153;
@@ -35,8 +39,7 @@ body{
 	display: inline;
 	margin-right: 10px;
 	color: #003153;
-}
-
+	}
 #economy {
 	display: flex;
 	justify-content: center;
@@ -45,7 +48,7 @@ body{
 	padding-left: 0;
 	border: #003153 3pt solid;
 	border-radius: 5pt;
-	box-shadow: 10pt 8pt #003153;
+	box-shadow: 8pt 6pt #003153;
 	list-style: none;
 	color: #003153;
 	width: 30%;
@@ -58,6 +61,7 @@ body{
 }
 
 .fieldset {
+	
 	border-style: none;
 	color: #003153;
 }
@@ -72,14 +76,12 @@ button {
 	float: left;
 	/*padding-left: 2vw;*/
 	width: 50%;
-	border-right: solid 1px black; 
-	/* background-color: pink; */
 }
 
 #infoDiv{
 	float: right; 
 	width: 49%;
-	/* background-color: limegreen; */
+	border-left: solid 1px black; 
 }
 
 form{
@@ -94,15 +96,19 @@ form{
 	width: 10%;
 	
 }
-
 .actionButton{
 	box-shadow: 7pt 5pt #003153;
 	border-radius: 5pt;
 	transition-duration: 0.3s;
 }
-
 .actionButton:hover{
 	background-color: #003253;
 	color: white;
 	box-shadow: 0 0 0;
+}
+ol{
+	color: #003253;
+}
+legend{
+	padding-left: 17vw;
 }

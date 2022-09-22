@@ -39,21 +39,15 @@
 		<form>
 		<fieldset class="fieldset">
 		<legend>Tunnland som ska säljas/köpas: <span id="outputAcrestosellbuy"></span></legend>
-		<input type="button" value="-" id="minusbuttonAcrestosellbuy" onclick="onChangeAcres('minusbuttonAcrestosellbuy');">
-		<input type="range" id="sliderAcrestosellbuy" onchange="onChangeAcres('sliderAcrestosellbuy');">
-		<input type="button" value="+" id="plusbuttonAcrestosellbuy" onclick="onChangeAcres('plusbuttonAcrestosellbuy');">
+		<input type="input" placeholder="Tunnland som ska säljas/köpas:" id="sliderAcrestosellbuy" onchange="onChangeAcres('sliderAcrestosellbuy');">
 		</fieldset>
 		<fieldset class="fieldset">
 		<legend>Mata folket: <span id="outputFeedpeople"></span></legend>
-		<input type="button" value="-" id="minusbuttonFeedpeople" onclick="onChangeFeeding('minusbuttonFeedpeople');">
-		<input type="range" id="sliderFeedpeople" onchange="onChangeFeeding('sliderFeedpeople');">
-		<input type="button" value="+" id="plusbuttonFeedpeople" onclick="onChangeFeeding('plusbuttonFeedpeople');">
+		<input type="input" placeholder="Mata folket: " id="sliderFeedpeople" onchange="onChangeFeeding('sliderFeedpeople');">
 		</fieldset>
 		<fieldset class="fieldset">
 		<legend>Plantera med utsäde: <span id="outputPlantwithseed"></span></legend>
-		<input type="button" value="-" id="minusbuttonPlantwithseed" onclick="onChangePlanting('minusbuttonPlantwithseed');">
-		<input type="range" id="sliderPlantwithseed" onchange="onChangePlanting('sliderPlantwithseed');">
-		<input type="button" value="+" id="plusbuttonPlantwithseed" onclick="onChangePlanting('plusbuttonPlantwithseed');">
+		<input type="input" placeholder="Plantera med utsäde:" id="sliderPlantwithseed" onchange="onChangePlanting('sliderPlantwithseed');">
 		</fieldset>
 		<button class="actionButton" type="button" onclick="gameStart();">Restart</button>
 		<button class="actionButton" type="button" onclick="finishTurn();">Det är min order!</button>

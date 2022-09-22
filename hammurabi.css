@@ -48,7 +48,7 @@ body{
 	padding-left: 0;
 	border: #003153 3pt solid;
 	border-radius: 5pt;
-	box-shadow: 10pt 8pt #003153;
+	box-shadow: 8pt 6pt #003153;
 	list-style: none;
 	color: #003153;
 	width: 30%;
@@ -61,6 +61,7 @@ body{
 }
 
 .fieldset {
+	
 	border-style: none;
 	color: #003153;
 }
@@ -107,4 +108,7 @@ form{
 }
 ol{
 	color: #003253;
+}
+legend{
+	padding-left: 17vw;
 }

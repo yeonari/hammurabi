@@ -24,6 +24,7 @@ body{
 	font-family: 'Helvetica', sans-serif;
 	margin: 0;
 	padding: 0;
+	height: 100%;
 }
 
 #people {
@@ -73,14 +74,18 @@ button {
 
 #spelDiv{
 	float: left;
-	/*padding-left: 2vw;*/
 	width: 50%;
+	background-color: #E69A8DFF;
+	vertical-align: top;
+	border-radius: 25px;
 }
 
 #infoDiv{
 	float: right; 
 	width: 49%;
 	border-left: solid 1px black; 
+	background-color: #5F4B8BFF;
+	border-radius: 25px;
 }
 
 form{
@@ -99,6 +104,7 @@ form{
 	box-shadow: 7pt 5pt #003153;
 	border-radius: 5pt;
 	transition-duration: 0.3s;
+	margin-bottom: 10vh;
 }
 .actionButton:hover{
 	background-color: #003253;

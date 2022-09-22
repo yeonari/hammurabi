@@ -4,11 +4,16 @@ head{
 h1{
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
-	widht: 20%;
+	color: #003153;
+}
+h2{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
 	color: #003153;
 }
 p{
 	color: #003153;
+	padding-left: 10pt;
 }
 .font2{
 	text-align: center;
@@ -70,14 +75,12 @@ button {
 	float: left;
 	/*padding-left: 2vw;*/
 	width: 50%;
-	border-right: solid 1px black; 
-	background-color: pink;
 }
 
 #infoDiv{
 	float: right; 
 	width: 49%;
-	background-color: limegreen;
+	border-left: solid 1px black; 
 }
 
 form{
@@ -101,4 +104,7 @@ form{
 	background-color: #003253;
 	color: white;
 	box-shadow: 0 0 0;
+}
+ol{
+	color: #003253;
 }

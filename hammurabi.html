@@ -10,84 +10,142 @@
 		</script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" 
+		rel="stylesheet">
 	</head>
-	
+
 	<header class="start">
-		<h1 class="font1">O Great Hammurabi!</h1>
-		<img id="hammurabi_foto" src="Drawing_of_Hammurabi.jpg" alt="Hammurabi">
+		<h1>O Great Hammurabi!</h1>
+		<img id="hammurabi_foto" src="Drawing_of_Hammurabi.jpg" 
+		alt="Picture of Hammurabi">
 	</header>
 	
 	<body onload="gameStart();">
 	<!-- Div for the game -->
 		<div id="spelDiv">
-		<h1 id="year">TEXT-SOM-BYTS-UT-AV-JS-FILEN</h1>
-		<ul id="people">
-			<li id="starved">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
-			<li id="newcomers">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
-			<li id="population">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
-		</ul>
-		<ul id="economy">
-			<li id="acres">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
-			<li id="bushels">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
-			<li id="harvest">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
-			<li id="rats">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
-			<li id="price">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
-		</ul>
 		
+			<h1 id="year">TEXT-SOM-BYTS-UT-AV-JS-FILEN</h1>
+			
+			<ul id="people">
+				<li id="starved">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+				<li id="newcomers">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+				<li id="population">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+			</ul>
 		
-		<form>
-		<fieldset class="fieldset">
-		<legend>Tunnland som ska säljas/köpas: <span id="outputAcrestosellbuy"></span></legend>
-		<input type="input" placeholder="Tunnland som ska säljas/köpas:" id="sliderAcrestosellbuy" onchange="onChangeAcres('sliderAcrestosellbuy');">
-		</fieldset>
-		<fieldset class="fieldset">
-		<legend>Mata folket: <span id="outputFeedpeople"></span></legend>
-		<input type="input" placeholder="Mata folket: " id="sliderFeedpeople" onchange="onChangeFeeding('sliderFeedpeople');">
-		</fieldset>
-		<fieldset class="fieldset">
-		<legend>Plantera med utsäde: <span id="outputPlantwithseed"></span></legend>
-		<input type="input" placeholder="Plantera med utsäde:" id="sliderPlantwithseed" onchange="onChangePlanting('sliderPlantwithseed');">
-		</fieldset>
-		<button class="actionButton" type="button" onclick="gameStart();">Restart</button>
-		<button class="actionButton" type="button" onclick="finishTurn();">Det är min order!</button>
-		</form>
+			<ul id="economy">
+				<li id="acres">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+				<li id="bushels">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+				<li id="harvest">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+				<li id="rats">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+				<li id="price">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+			</ul>
+		
+			<form>
+				<fieldset class="fieldset">
+
+					<legend>Tunnland som ska säljas/köpas: 
+						<span id="outputAcrestosellbuy"></span>
+					</legend>
+
+				<input type="input" id="sliderAcrestosellbuy" 
+				onchange="onChangeAcres('sliderAcrestosellbuy');">
+				</fieldset>
+		
+				<fieldset class="fieldset">
+					
+					<legend>Mata folket: 
+						<span id="outputFeedpeople"></span>
+					</legend>
+				
+					<input type="input" id="sliderFeedpeople" 
+				onchange="onChangeFeeding('sliderFeedpeople');">
+				</fieldset>
+		
+				<fieldset class="fieldset">
+					
+					<legend>Plantera med utsäde: 
+						<span id="outputPlantwithseed"></span>
+					</legend>
+				
+					<input type="input" id="sliderPlantwithseed" 
+				onchange="onChangePlanting('sliderPlantwithseed');">
+				</fieldset>
+		
+				<button class="actionButton" type="button" 
+				onclick="gameStart();">Restart</button>
+				<button class="actionButton" type="button" 
+				onclick="finishTurn();">Det är min order!</button>
+			</form>
+
 		</div>
+		
 		<!-- Div for the rules and background information -->
 		<div id="infoDiv">
-			<h1 class="font2"> Hummarabi, hjälp oss å nådiga konung</h1>
-			<p>Sätt dig vid makten som den store och barmhärtige konungen Hummarabi,<br>
-			och vägled ditt folk. Med hjälp av dinna underordnade bestäm hur mycket skäppor 
-			ditt folk ska få, samt hur mycket av tunnlandet du ska så. <br> 
-			Du kommer sitta vid makten i <em> 10 år</em>. Led ditt folk rätt!
+			<h1> Hammurabi, hjälp oss å nådiga konung</h1>
+			<p>Sätt dig vid makten som den store och barmhärtige 
+			konungen Hummarabi,<br>
+			och vägled ditt folk. Med hjälp av dinna underordnade 
+			bestäm hur mycket skäppor 
+			ditt folk ska få, samt hur mycket av tunnlandet du ska 
+			så. <br> 
+			Du kommer sitta vid makten i <em> 10 år</em>. 
+			Led ditt folk rätt!
 			</p>
 		<!-- List for Rules -->
 			<h2> Regler</h2>
+			
 			<ol>
-				<li>Du sitter vid makten i 10 år, ett tur är 1 år.</li>
-				<li>Vid varje tur ska du fylla i hur många,
-				<em>Skäppor</em> du ska ge ditt folk, omplantera eller sälja.</li>
-				<li>Varje person i ditt land behöver 20 skäppor för att överleva,
-				varje person kan så 10 tunnland.</li>
+				<li>
+					Du sitter vid makten i 10 år, ett tur är 1 år.
+				</li>
+
+				<li>
+					Vid varje tur ska du fylla i hur många,
+					<em>Skäppor</em> 
+					du ska ge ditt folk, omplantera eller sälja.
+				</li>
+				
+				<li>
+					Varje person i ditt land behöver 20 skäppor 
+					för att överleva,
+					varje person kan så 10 tunnland.
+				</li>
 				<li>Varje tunnland behöver 1 skäppa för att så.</li>
-				<li>Priserna på tunnland skiftar mellan <em>10</em> och <em>26</em></li>
-				<li>Om du missbrukar din makt kommer folket att göra upplop,
-				och avsätta dig från makten. Detta medför en förlust</li>
+
+				<li>
+					Priserna på tunnland skiftar mellan 
+					<em>10</em> och <em>26</em>
+				</li>
+
+				<li>
+					Om du missbrukar din makt kommer 
+					folket att göra upplop,
+					och avsätta dig från makten. 
+					Detta medför en förlust
+				</li>
+
 				<li>Lycka Till!</li>
 			</ol>
 			<!-- Background information about Hammurabi-->
-			<h2>Historia</h2>
-			<p>Hammurabi var en verklig kung i Babylon (nuvarande Irak), 
-			han levde uppskattat mellan 1792 till 1750 f.Kr.
-			Under början av sin regeringstid var han
-			en av många mindre kungar som härskade över delar av det som senare blev Babylonien. 
-			Efter cirka 30 år av sin regeringstid lyckades han med hjälp av allianser och krig
-			på relativt kort tid erövra Larsa och alla andra kungariken i Sumer och dessutom även Mari
-			i nordväst samt städer i Assyrien. I och med det blev Babylon ett viktigt centrum
-			med Hammurabi som deras konung</p>
-			
-			
-			
+			<h2>
+				<a href="https://sv.wikipedia.org/wiki/Hammurabi" 
+				target="blank">Historia</a></h2>
+			<p>
+<!--456789012345678901234567890123456789012345678901234567890123456-->
+				Hammurabi var en verklig kung i Babylon 
+				(nuvarande Irak), 
+				han levde uppskattat mellan 1792 till 1750 f.Kr.
+				Under början av sin regeringstid var han
+				en av många mindre kungar som härskade över delar 
+				av det som senare blev Babylonien. 
+				Efter cirka 30 år av sin regeringstid lyckades han 
+				med hjälp av allianser och krig
+				på relativt kort tid erövra Larsa och alla andra 
+				kungariken i Sumer och dessutom även Mari
+				i nordväst samt städer i Assyrien. I och med det 
+				blev Babylon ett viktigt centrum
+				med Hammurabi som deras konung
+			</p>
 			
 		</div>
 		

@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app23.us.archive.org';v.server_ms=715;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/ait-client-rewrite.js" charset="utf-8"></script>
+<script type="text/javascript">
+WB_wombat_Init("https://web.archive.org/web/", "20190205104407", "www.hammurabigame.com");
+</script>
+<script type="text/javascript" src="/_static/js/wbhack.js" charset="utf-8"></script>
+<script type="text/javascript">
+__wbhack.init('https://web.archive.org/web');
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css" />
+<!-- End Wayback Rewrite JS Include -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<title>Hammurabi Game - Play Hammurabi Online</title>
+<meta name="description" content="Hammurabi, the classic game of strategy and resource allocation.  Determine how to develop your country by purchasing land and planting crops.  Be rated against great leaders of history.">
+<meta name="keywords" content="Hammurabi, Hamurabi, online, game, Code of Laws, codify, free, grain, plague, rats, 10, years, Nero, Ivan, Charlemagne"> 
+<script language="JavaScript" type="text/javascript">
+<!--
+
+function start()  {
+	document.f.buy.focus();
+	update();
+	}
+
+function getValues()
+{
+	buy  = parseInt(document.f.buy.value);
+	if (isNaN(buy))  {  buy=0;  }
+	feed = parseInt(document.f.feed.value);
+	if (isNaN(feed))  { feed=0;  }
+	seed = parseInt(document.f.seed.value);
+	if (isNaN(seed))  { seed=0;  }
+	bushels = 2800;
+	acres = 1000;
+	population = 100;
+	trade = 18;
+	return true;
+}
+
+function update()  
+{
+	getValues();
+	anumber= 2800 - (buy * 18) - feed - seed; 
+	if(document.all){
+    	 remaining.innerText = anumber+" bushels remaining";
+	} else{
+    	document.getElementById('remaining').textContent = anumber+" bushels remaining";
+	}
+}
+
+function OpenURL(url)
+ {
+ tableWindow = window.open (url,'','width=650,height=700,resizable,scrollbars,menubar,toolbar, location, status');
+ }
+ 
+function presubmit() {
+	anumber= bushels - (buy*trade) - feed - seed; 
+	if (anumber<0)  {
+		prenumber = bushels - feed - seed;
+
+		alert("Hammurabi: Thank again. You have only "+bushels+" bushels of grain.  ");
+		document.f.feed.focus();
+		document.f.buy.focus();
+		return false;
+	}
+	if (validatebuy() && validatefeed() && validateseed())  {
+		return true;
+	}
+	return false;
+}
+
+function validatebuy()  {
+	getValues();
+	if ( buy<0 && (buy*-1 >acres))  {
+		alert("Hammurabi: Think again. You have only 1000 acres of land.");
+		document.f.feed.focus();
+		document.f.buy.focus();
+		return false;
+	}
+	update();  
+	return true;
+}
+
+function validatefeed()  {
+	getValues();
+	anumber= bushels - (buy*trade) - feed - seed; 
+	prenumber= bushels - buy*trade - seed 
+	if (feed<0)  {
+		alert("Hammurabi: I cannot do what you wish.  Get yourself another steward!!");
+		document.f.buy.focus();
+		document.f.feed.focus();
+		return false;
+	}
+
+	update();  
+	return true;
+}
+function validateseed()  {
+	getValues();
+	if (seed<0)  {
+		alert("Hammurabi: I cannot do what you wish.  Get yourself another steward!!");
+		document.f.buy.focus();
+		document.f.seed.focus();
+		return false;
+	}
+	anumber= population * 10; 
+	if (seed > anumber)  {
+		alert("Hammurabi: But you have only "+ population+ " people to tend the fields.");
+		document.f.buy.focus();
+		document.f.seed.focus();
+		return false;
+	}
+	anumber= acres + buy; 
+	if (document.f.seed.value > anumber)  {
+		alert("Hammurabi: Think again.  You own only "+anumber+" acres.");
+		document.f.buy.focus();
+		document.f.seed.focus();
+		return false;
+	}
+	update();  
+	return true;
+}
+
+// -->
+</script>
+<style type="text/css">
+<!--
+.style3 {font-size: small}
+.style4 {font-size: medium}
+-->
+</style>
+</head>
+
+<body onload="start();" bgcolor="#FFFFBB"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/_static/js/timestamp.js" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/graph-calc.js" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/auto-complete.js" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/toolbar.js" charset="utf-8"></script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+.wb-autocomplete-suggestions {
+    text-align: left; cursor: default; border: 1px solid #ccc; border-top: 0; background: #fff; box-shadow: -1px 1px 3px rgba(0,0,0,.1);
+    position: absolute; display: none; z-index: 2147483647; max-height: 254px; overflow: hidden; overflow-y: auto; box-sizing: border-box;
+}
+.wb-autocomplete-suggestion { position: relative; padding: 0 .6em; line-height: 23px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.02em; color: #333; }
+.wb-autocomplete-suggestion b { font-weight: bold; }
+.wb-autocomplete-suggestion.selected { background: #f0f0f0; }
+</style>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="wm-ipp-inside">
+  <div style="position:relative;">
+    <div id="wm-logo" style="float:left;width:130px;padding-top:10px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="/_static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+    </div>
+    <div class="r" style="float:right;">
+      <div id="wm-btns" style="text-align:right;height:25px;">
+                  <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a href="#"
+             onclick="__wm.saveSnapshot('http://www.hammurabigame.com/hammurabi-game.php', '20190205104407')"
+             title="Share via My Web Archive"
+             id="wm-save-snapshot-open"
+          >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php"
+             title="Sign In"
+             id="wm-sign-in"
+          >
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        	<a href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+	<a id="wm-tb-close" href="#close" onclick="__wm.h(event);return false;" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" style="text-align:right;">
+	<a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://web.archive.org/web/20190205104407/http://www.hammurabigame.com/hammurabi-game.php', '', 'height=400,width=600'); return false;" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+	<a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=https://web.archive.org/web/20190205104407/http://www.hammurabigame.com/hammurabi-game.php&amp;via=internetarchive', '', 'height=400,width=600'); return false;" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+    </div>
+    <table class="c" style="">
+      <tbody>
+	<tr>
+	  <td class="u" colspan="2">
+	    <form target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.hammurabigame.com/hammurabi-game.php" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20190205104407" /><input type="submit" value="Go" /></form>
+	  </td>
+	  <td class="n" rowspan="2" style="width:110px;">
+	    <table>
+	      <tbody>
+		<!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+		<tr class="m">
+		  <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20181220132740/http://www.hammurabigame.com:80/hammurabi-game.php" title="20 Dec 2018"><strong>Dec</strong></a></td>
+		  <td class="c" id="displayMonthEl" title="You are here: 10:44:07 Feb 05, 2019">FEB</td>
+		  <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20190319133440/http://hammurabigame.com:80/hammurabi-game.php" title="19 Mar 2019"><strong>Mar</strong></a></td>
+		</tr>
+		<!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+		<tr class="d">
+		  <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20190120213811/http://www.hammurabigame.com:80/hammurabi-game.php" title="21:38:11 Jan 20, 2019"><img src="/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a></td>
+		  <td class="c" id="displayDayEl" style="width:34px;font-size:24px;white-space:nowrap;" title="You are here: 10:44:07 Feb 05, 2019">05</td>
+		  <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20190216072524/http://hammurabigame.com:80/hammurabi-game.php" title="07:25:24 Feb 16, 2019"><img src="/_static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a></td>
+		</tr>
+		<!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+		<tr class="y">
+		  <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20180108063055/http://www.hammurabigame.com:80/hammurabi-game.php" title="08 Jan 2018"><strong>2018</strong></a></td>
+		  <td class="c" id="displayYearEl" title="You are here: 10:44:07 Feb 05, 2019">2019</td>
+		  <td class="f" nowrap="nowrap">2020</td>
+		</tr>
+	      </tbody>
+	    </table>
+	  </td>
+	</tr>
+	<tr>
+	  <td class="s">
+	    	    <div id="wm-nav-captures">
+	      	      <a class="t" href="/web/20190205104407*/http://www.hammurabigame.com/hammurabi-game.php" title="See a list of every capture for this URL">203 captures</a>
+	      <div class="r" title="Timespan for captures of this URL">20 May 2007 - 05 Aug 2019</div>
+	      </div>
+	  </td>
+	  <td class="k">
+	    <a href="" id="wm-graph-anchor">
+	      <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+		<canvas id="wm-sparkline-canvas" width="600" height="27" border="0"></canvas>
+	      </div>
+	    </a>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+    <div style="position:absolute;bottom:0;right:2px;text-align:right;">
+      <a id="wm-expand" class="wm-btn wm-closed" href="#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span style="font-size:80%">About this capture</span></a>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+            <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+            <div style="display:inline-block;vertical-align:top;width:50%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/archiveteam);"></span>
+		Organization: <a style="color:#33f;" href="https://archive.org/details/archiveteam" target="_new"><span class="wm-title">Archive Team</span></a>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  <img align=right src="http://archiveteam.org/images/e/e6/Archiveteam.jpg" width=200> Formed in 2009, the Archive Team (not to be confused with the archive.org Archive-It Team) is a rogue archivist collective dedicated to saving copies of rapidly dying or deleted websites for the sake of history and digital heritage. The group is 100% composed of volunteers and interested parties, and has expanded into a large amount of related projects for saving online and digital history.
+<p>
+History is littered with hundreds of conflicts over the future of a community, group, location or business that were "resolved" when one of the parties stepped ahead and destroyed what was there. With the original point of contention destroyed, the debates would fall to the wayside. Archive Team believes that by duplicated condemned data, the conversation and debate can continue, as well as the richness and insight gained by keeping the materials. Our projects have ranged in size from a single volunteer downloading the data to a small-but-critical site, to over 100 volunteers stepping forward to acquire terabytes of user-created data to save for future generations.
+<p>
+The main site for Archive Team is at <a href="http://www.archiveteam.org">archiveteam.org</a> and contains up to the date information on various projects, manifestos, plans and walkthroughs.
+<p>
+This collection contains the output of many Archive Team projects, both ongoing and completed. Thanks to the generous providing of disk space by the Internet Archive, multi-terabyte datasets can be made available, as well as in use by the <a href="http://archive.org/web/web.php">Wayback Machine</a>, providing a path back to lost websites and work. 
+<p>
+Our collection has grown to the point of having sub-collections for the type of data we acquire. If you are seeking to browse the contents of these collections, the Wayback Machine is the best first stop. Otherwise, you are free to dig into the stacks to see what you may find.
+<p>
+<b>The Archive Team Panic Downloads</b> are full pulldowns of currently extant websites, meant to serve as emergency backups for needed sites that are in danger of closing, or which will be missed dearly if suddenly lost due to hard drive crashes or server failures. 
+<p>
+	</div>
+	      </div>
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/archivebot)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/archivebot" target="_new"><span class="wm-title">ArchiveBot: The Archive Team Crowdsourced Crawler</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  ArchiveBot is an IRC bot designed to automate the archival of smaller websites (e.g. up to a few hundred thousand URLs). You give it a URL to start at, and it grabs all content under that URL, records it in a WARC, and then uploads that WARC to ArchiveTeam servers for eventual injection into the Internet Archive (or other archive sites).
+<p>
+To use ArchiveBot, drop by #archivebot on EFNet. To interact with ArchiveBot, you issue commands by typing it into the channel. Note you will need channel operator permissions in order to issue archiving jobs. The dashboard shows the sites being downloaded currently.
+<p>
+There is a dashboard running for the archivebot process at <a href="http://www.archivebot.com">http://www.archivebot.com</a>.
+<p>
+ArchiveBot's source code can be found at <a href="https://github.com/ArchiveTeam/ArchiveBot">https://github.com/ArchiveTeam/ArchiveBot</a>.
+	</div>
+	      </div>
+    </div>
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+  </div></div></div></div><script type="text/javascript">
+__wm.bt(600,27,25,2,"web","http://www.hammurabigame.com/hammurabi-game.php","2019-02-05",1996,"/_static/",['css/banner-styles.css','css/iconochive.css']);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<table width="1000" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="7%">&nbsp;</td>
+    <td width="72%">&nbsp;</td>
+    <td width="21%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="center">
+      <h1>Hammurabi</h1>
+    </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><h3 align="center">The classic game of strategy and resource allocation</h3>
+      <p align="center"></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><form action="hammurabi-game.php" method="post" name="f">
+	<table width="100%" border="0" cellspacing="6" cellpadding="0">
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="50%"><b>Hammurabi: I beg to report to you,</b><br/>
+In <b>Year 1</b>, 0 people starved.<br/>5 people came to the city.<br/>
+
+<!-- only if game is still going, otherwise, show results -->
+The city population is now <b>100</b>.<br/>
+The city now owns <b>1000 acres</b>.<br/>
+You harvested 3 bushels per acre.<br/>
+Rats ate 200 bushels.</td>
+              <td width="50%">&nbsp;</td>
+            </tr>
+            <tr>
+              <td><b>You now have <b>2800 </b> bushels in store.</b></td>
+              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td id="remaining">&nbsp;</td>
+				  
+                </tr>
+              </table>                </td>
+            </tr>
+            <tr>
+              <td>Land is trading at <b>18 bushels per acre</b>.</td>
+              <td>&nbsp;</td>
+            </tr>
+
+          </table></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="5" cellpadding="0">
+          <tr>
+            <td width="50%" valign="middle"><span class="style3"><span class="style4">How many acres do you wish to buy or sell?</span><br/>
+            </span></td>
+            <td width="50%" valign="middle"><p class="style3">
+              <input name="buy" type="text" tabindex="1" size="9" maxlength="9" onchange="validatebuy();"/>
+              enter a negative amount to sell bushels<br/></p>              </td>
+          </tr>
+          <tr>
+            <td valign="middle"><span class="style3"><span class="style4">How many bushels do you wish to feed your people?</span> <br/>
+            </span></td>
+            <td valign="middle"><span class="style3">
+              <input name="feed" type="text" id="feed" tabindex="1" size="9" onchange="validatefeed();"/>
+              each citizen needs 20 bushels a year</span></td>
+          </tr>
+          <tr>
+            <td valign="middle"><span class="style3"><span class="style4">How many acres do you wish to plant with seed? </span><br/>
+            </span></td>
+            <td valign="middle"><span class="style3">
+              <input name="seed" type="text" id="seed" tabindex="1" size="9" onchange="validateseed();"/>
+              each acre takes one bushel</span><br/><br/></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" name="Submit" value="Make It So!" tabindex="4" onclick="return presubmit(); "/>
+			<input type="hidden" name="trade" value="18"/>
+			<input type="hidden" name="year" value="1"/>
+			<input type="hidden" name="population" value="100"/>
+			<input type="hidden" name="acres" value="1000"/>
+			<input type="hidden" name="bushels" value="2800"/>			
+			<input type="hidden" name="sttot" value="0"/>
+			<input type="hidden" name="stpertot" value="0"/>			</td>
+		          </tr>
+        </table>		</td>
+      </tr>
+      <tr>
+        <td><a href="hammurabi-game.php">Start a new game</a> </td>
+      </tr>
+    </table>
+      <p>
+        </p> 
+        </p>
+      </form></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><hr/></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><p>Try your hand at governing ancient Sumeria successfully for a 10 year term of office.</p>
+    <p>Hammurabi (or, the game Hamurabi), one of the earliest computer games, is the great granddaddy of  strategy and resource allocation games such as Civilization.</p>
+    <p>Hammurabi is named for the second millenium B.C. Babylonian king recognized for codifying laws, known as <a href="javascript:void(OpenURL('https://web.archive.org/web/20190205104407/http://www.louvre.fr/media/repository/ressources/sources/illustration/atlas/image_52352_v2_m56577569830555816.jpg'))">The Code of Hammurabi</a>.</p>
+    <p>The game of Hammurabi lasts 10 years, and each year you determine how to allocate your scarce bushels of grain: buying and selling acres of land, feeding your population, and planting seeds for next year's crops </p>
+    <p><strong>The Rules: </strong>
+    <ol>
+      <li>The game lasts 10 years, with a year being one turn. </li>
+      <li>Each year, enter how many bushels of grain to allocate to buying (or selling) acres of land, feeding your population, and planting crops for the next year.</li>
+      <li>Each person needs 20 bushels of grain each year to live and can till at most 10 acres of land.</li>
+      <li>Each acre of land requires one bushel of grain to plant seeds.</li>
+      <li>The price of each acre of land fluctuates from 17 bushels per acre to 26 bushels.</li>
+      <li>If the conditions in your country ever become bad enough, the people will overthrow you and you won't finish your 10 year term. </li>
+      <li>If you make it to the 11th year, your rule will be evaluated and you'll be ranked against great figures in history. </li>
+    </ol>
+    <p><strong>The Basic Strategy: </strong></p>
+    <ol>
+      <li>Start with trying to feed all, or most, of your population 20 bushels of grain per person</li>
+      <li>Try to plant seeds on all of your land, assuming you have enough people and enough grain.</li>
+      <li>Last, if you have grain remaining, you might spend some buying additional acres of land, especially if the price is right. If you didn't have enough grain for food and seed, you may need to sell some of your land, hopefully, at a good price. </li>
+    </ol>
+    <p>Along the way, you'll deal with famine, plagues, fluctuating crop yields and varying prices for land. The object of the game is to last 10 years to the end of your term and to leave the city better off than how you found it. Leaders are evaluated based on how many people starved during one's leadership, and how much land per person remains after the end of the 10 year term. </p>
+    <p>This game of Hammurabi and is based on the BASIC game, <a href="javascript:void(OpenURL('https://web.archive.org/web/20190205104407/http://en.wikipedia.org/wiki/Hamurabi'))">Hamurabi</a>, popularized by David Ahl. </p></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<script src="https://web.archive.org/web/20190205104407js_/http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-858274-2";
+urchinTracker();
+</script>
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 10:44:07 Feb 05, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:27:24 Sep 24, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  RedisCDXSource: 502.578
+  exclusion.robots.policy: 0.277
+  PetaboxLoader3.resolve: 67.189 (2)
+  CDXLines.iter: 15.655 (3)
+  exclusion.robots: 0.289
+  PetaboxLoader3.datanode: 45.297 (4)
+  esindex: 0.012
+  LoadShardBlock: 118.93 (3)
+  captures_list: 645.134
+  load_resource: 53.962
+-->
